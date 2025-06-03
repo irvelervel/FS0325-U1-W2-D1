@@ -86,4 +86,76 @@ console.log(number3)
 let s1 = '30'
 let s2 = '5'
 
-let s3 = s1 + s2
+let s3 = s1 + s2 // '30' + '5' = '305'
+let s4 = s1 - 'stefano'
+console.log(s4) // NaN "not a number"
+
+// operazione matematiche
+console.log(5 + 5) // 10
+console.log(5 - 5) // 0
+console.log(5 * 5) // 25
+console.log(5 / 5) // 1
+console.log(15 % 5) // 0 rappresenta il resto della divisione
+console.log(17 % 3) // 2 rappresenta il resto della divisione
+
+let myName = 'Roberto'
+
+console.log('Questo è il valore di myName: ' + myName)
+
+let progressive = 0
+progressive = 5
+// progressive = progressive + 3
+// si potrebbe anche scrivere così:
+progressive += 3
+// scorciatoia "pro" :)
+// alla fine progressive vale 8
+
+// COSTANTI
+// Una costante è una speciale variabile che non può assumere nessun'altro valore
+// a parte quello fornito inizialmente
+const epicodeURL = 'https://www.epicode.com'
+const fixedNumber = 24
+// fixedNumber = 25 // <-- dà errore!
+console.log("L'indirizzo di epicode è " + epicodeURL)
+
+// const topogigio // creare una costante senza darle un valore iniziale è memoria sprecata!
+
+// TIP: utilizzate le doppie virgolette quando dovete delimitare una stringa con un apostrofo
+// dovete salvare in una stringa il valore --> l'ultimo dei moicani
+let favouriteMovie = "l'ultimo dei moicani"
+
+// VALORI BOOLEANI (true/false)
+// Un valore booleano indica la veridicità o meno di un'espressione.
+
+let bool1 = 25 > 10 // true
+let bool2 = -3 < -5 // false
+console.log(bool1)
+console.log(bool2)
+
+let bool3 = 25 >= 25 // true
+let bool4 = 15 <= 100 // true
+
+// = rappresenta ASSEGNAZIONE in JS, serve per dare un valore ad una variabile
+// === rappresentano una UGUAGLIANZA
+let bool5 = 45 === 45 // true
+let bool6 = 'Stefano' === 'Stefano' // true
+let bool7 = 'Topo' === 'Gigio' // false
+
+// parentesi JS :(
+console.log(45 === '45') // false
+// console.log(45 == '45') // true
+// il == confronta solamente il VALORE e NON IL TIPO :((((
+
+// !== rappresentano una DISUGUAGLIANZA
+let bool8 = 45 !== 45 // false
+let bool9 = 'Topo' !== 'Gigio' // true
+
+let age = 17
+let iCanDrive = age >= 18
+console.log('valore di iCanDrive ' + iCanDrive) // "valore di iCanDrive false"
+
+let firstname = 'Stefano'
+let lastname = 'Casasola'
+
+// Il mio nome è Stefano Casasola
+console.log('Il mio nome è' + ' ' + firstname + ' ' + lastname)
