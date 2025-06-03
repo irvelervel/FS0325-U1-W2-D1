@@ -159,3 +159,65 @@ let lastname = 'Casasola'
 
 // Il mio nome è Stefano Casasola
 console.log('Il mio nome è' + ' ' + firstname + ' ' + lastname)
+
+// CONCATENARE MULTIPLE COMPARAZIONI INSIEME
+// AND &&
+
+let goodWeather = true
+let amIFree = true
+
+const letsGoToTheBeach = goodWeather === true && amIFree === true
+
+// l'operatore AND (&&) serve a concatenare multiple espressioni insieme.
+// in particolare, tornerà TRUE se TUTTE le parti da lui collegate sono TRUE
+
+console.log(letsGoToTheBeach)
+// SPECCHIETTO AND:
+// false && false -> false
+// false && true -> false
+// true && false -> false
+// true && true -> true
+
+// OR ||
+
+let guanciale = true
+let mozzarella = false
+
+let canICookDinnerForYou = guanciale === true || mozzarella === true
+// true
+
+// SPECCHIETTO OR:
+// false || false -> false
+// false || true -> true
+// true || false -> true
+// true || true -> true
+
+// Mario è il coccolo del professore.
+// Il professore fornisce agli studenti un esame da fare.
+// Come fa uno studente a passare l'esame?
+
+let evaluation = 12
+let yourName = 'Luigi'
+
+let examPassed = evaluation >= 18 || yourName === 'Mario'
+console.log('examPassed è true o false?' + examPassed)
+
+// OPERATORE ! (not)
+// l'operatore ! inverte il significato di un'espressione.
+
+const y = !(18 > 20)
+// 18 > 20 sarebbe false, ma con il ! davanti l'espressione è diventata true
+
+// L'OPERATORE TERNARIO (ternary operator)
+// l'operatore ternario serve per assegnare un valore ad una variabile sulla base di una
+// condizione
+
+const anotherAge = 20
+const canIDrive = anotherAge >= 18 ? true : false
+
+// salvo un numero in una variabile. Se il numero è 15, salverò 45. Se no,
+// salverò 30.
+const myNumber = 20
+const result = myNumber === 15 ? 45 : 30
+// condizione ? se sì : se no
+// nel nostro caso, result diventa 30
